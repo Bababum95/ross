@@ -13,7 +13,7 @@
 
 ?>
 
-<!-- wp:group {"className":"phone",} -->
+<!-- wp:group {"className":"phone","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group phone">
 
     <!-- wp:image {"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->

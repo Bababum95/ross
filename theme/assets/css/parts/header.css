@@ -1,3 +1,5 @@
+@import url("../patterns/phone.css");
+
 .header {
   border-bottom: 1px solid #ebebeb;
   padding: 10px 16px;
@@ -5,14 +7,17 @@
 
 .header__container {
   display: flex;
-  max-width: var(--wp--style--global--wide-size);
+  align-items: center;
+  max-width: calc(var(--wp--style--global--wide-size) + 40px);
   margin: 0 auto;
+  gap: 34px;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
   font-family: var(--wp--preset--font-family--montserrat);
+  gap: 8px;
 }
 
 .header__logo p {
