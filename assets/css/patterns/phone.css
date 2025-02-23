@@ -1,0 +1,15 @@
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.phone a {
+  text-decoration-line: none;
+}
