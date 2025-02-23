@@ -8,7 +8,7 @@
 .header__container {
   display: flex;
   align-items: center;
-  max-width: calc(var(--wp--style--global--wide-size) + 40px);
+  max-width: calc(var(--wp--style--global--content-size) + 40px);
   margin: 0 auto;
   gap: 34px;
 }

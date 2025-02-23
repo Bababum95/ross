@@ -1,7 +1,21 @@
-import { useBlockProps } from "@wordpress/block-editor";
+import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 
-export const Save = () => {
-	const blockProps = useBlockProps.save();
+export const Save = ({ attributes }) => {
+  const blockProps = useBlockProps.save();
 
-	return <div {...blockProps}></div>;
+  return (
+    <div {...blockProps}>
+      <div className="wp-block-ross-hero-banner__left">
+        <div className="wp-block-ross-hero-banner__content">
+          <InnerBlocks.Content />
+        </div>
+      </div>
+      {attributes.mediaURL && (
+        <img
+          className="wp-block-ross-hero-banner__image"
+          src={attributes.mediaURL}
+        />
+      )}
+    </div>
+  );
 };

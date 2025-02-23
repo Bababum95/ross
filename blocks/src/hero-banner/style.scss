@@ -1,0 +1,48 @@
+.wp-block-ross-hero-banner {
+  position: relative;
+  color: var(--wp--preset--color--base);
+
+  &__left {
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      max-width: 864px;
+      clip-path: polygon(0 0, 46% 0, 100% 100%, 0 100%);
+      background-color: var(--wp--preset--color--accent-1);
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 15px;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    width: 75%;
+    max-height: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+  }
+}

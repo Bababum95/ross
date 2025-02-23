@@ -1,17 +1,28 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "ross/hero-banner",
-	"version": "0.1.0",
-	"title": "Hero Banner",
-	"category": "theme",
-	"icon": "smiley",
-	"example": {},
-	"attributes": {},
-	"supports": {
-		"html": false
-	},
-	"textdomain": "ross",
-	"editorScript": "file:./index.js",
-	"style": "file:./style-index.css"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/hero-banner",
+  "version": "0.1.0",
+  "title": "Hero Banner",
+  "category": "theme",
+  "icon": "embed-photo",
+  "example": {},
+  "attributes": {
+    "mediaID": {
+      "type": "number"
+    },
+    "mediaURL": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-ross-hero-banner__image",
+      "attribute": "src"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ross",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
 }
