@@ -23,9 +23,10 @@ services:
       WP_ENV: development
     volumes:
       - wordpress_data:/var/www/html
-      - ./theme:/var/www/html/wp-content/themes/ross 
+      - ./theme:/var/www/html/wp-content/themes/ross
       - ./blocks/build:/var/www/html/wp-content/plugins/ross/build
       - ./blocks/ross.php:/var/www/html/wp-content/plugins/ross/ross.php
+      - ./php.ini:/usr/local/etc/php/php.ini
 
 volumes:
   wordpress_data:
