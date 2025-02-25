@@ -1,22 +1,13 @@
 import { MediaUpload } from "@wordpress/block-editor";
 import { Button } from "@wordpress/components";
-import classNames from "classnames";
-
-import "./Image.scss";
 
 type Props = {
   mediaID: number;
   mediaURL: string;
-  imageClass?: string;
   setAttributes: Function;
 };
 
-export const Image = ({
-  mediaID,
-  mediaURL,
-  setAttributes,
-  imageClass,
-}: Props) => {
+export const Image = ({ mediaID, mediaURL, setAttributes }: Props) => {
   const onSelectImage = (media) => {
     setAttributes({
       mediaURL: media.url,
@@ -30,24 +21,17 @@ export const Image = ({
       allowedTypes={["image"]}
       value={mediaID}
       render={({ open }) => (
-        <div className="upload-image">
-          {mediaURL && (
-            <img
-              className={classNames("upload-image__image", imageClass)}
-              src={mediaURL}
-              alt=""
-            />
-          )}
+        <>
+          {mediaURL && <img src={mediaURL} />}
           <Button
-            className={classNames("button button-large", {
-              ["upload-image__button_hidden"]: mediaID,
-            })}
+            className="button button-large"
             onClick={open}
             variant="secondary"
+            style={{ width: "100%" }}
           >
             {!mediaID ? "Upload Image" : "Change Image"}
           </Button>
-        </div>
+        </>
       )}
     />
   );

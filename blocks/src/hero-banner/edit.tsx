@@ -1,6 +1,11 @@
-import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
+import {
+  useBlockProps,
+  InnerBlocks,
+  InspectorControls,
+} from "@wordpress/block-editor";
+import { PanelBody } from "@wordpress/components";
 
-import { Image } from "@/components/Image/Image";
+import { Image } from "@/components/Image";
 
 export const Edit = ({ attributes, setAttributes }) => {
   const blockProps = useBlockProps();
@@ -12,12 +17,21 @@ export const Edit = ({ attributes, setAttributes }) => {
           <InnerBlocks />
         </div>
       </div>
-      <Image
-        mediaID={attributes.mediaID}
-        mediaURL={attributes.mediaURL}
-        setAttributes={setAttributes}
-        imageClass="wp-block-ross-hero-banner__image"
-      />
+      {attributes.mediaURL && (
+        <img
+          className="wp-block-ross-hero-banner__image"
+          src={attributes.mediaURL}
+        />
+      )}
+      <InspectorControls>
+        <PanelBody title="Image">
+          <Image
+            mediaID={attributes.mediaID}
+            mediaURL={attributes.mediaURL}
+            setAttributes={setAttributes}
+          />
+        </PanelBody>
+      </InspectorControls>
     </div>
   );
 };
