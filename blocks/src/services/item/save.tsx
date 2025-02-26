@@ -1,11 +1,11 @@
 import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 
-export const Edit = () => {
-  const blockProps = useBlockProps();
+export const Save = () => {
+  const blockProps = useBlockProps.save();
 
   return (
     <div {...blockProps}>
-      <InnerBlocks allowedBlocks={["ross/services-item"]} />
+      <InnerBlocks.Content />
     </div>
   );
 };

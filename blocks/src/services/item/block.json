@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/service-item",
+  "version": "0.1.0",
+  "title": "Services Item",
+  "category": "theme",
+  "icon": "hammer",
+  "example": {},
+  "attributes": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ross",
+  "parent": ["ross/services"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
