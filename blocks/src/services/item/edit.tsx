@@ -19,7 +19,6 @@ export const Edit = ({ attributes, setAttributes }) => {
       "--secondary-bg-color": attributes.secondaryBgColor,
     } as React.CSSProperties,
   });
-  const baseClass = blockProps.className;
 
   return (
     <div {...blockProps}>
