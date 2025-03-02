@@ -42,3 +42,9 @@ header.wp-block-template-part {
 .header__logo a {
   text-decoration-line: none;
 }
+
+@media screen and (max-width: 600px) {
+  header.wp-block-template-part {
+    top: 0;
+  }
+}
