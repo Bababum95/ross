@@ -28,10 +28,11 @@ if (! defined('ABSPATH')) {
 function blocks_init()
 {
 	register_block_type(__DIR__ . '/build/hero-banner');
+	register_block_type(__DIR__ . '/build/about');
 
 	register_block_type(__DIR__ . '/build/services');
 	register_block_type(__DIR__ . '/build/services/item');
-	
+
 	register_block_type(__DIR__ . '/build/hedaer-menu');
 	register_block_type(__DIR__ . '/build/hedaer-menu/item');
 }
