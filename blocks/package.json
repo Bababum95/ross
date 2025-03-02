@@ -28,6 +28,7 @@
     "@wordpress/element": "^6.18.0",
     "@wordpress/icons": "^10.18.0",
     "@wordpress/server-side-render": "^5.18.0",
-    "classnames": "^2.5.1"
+    "classnames": "^2.5.1",
+    "swiper": "^11.2.4"
   }
 }

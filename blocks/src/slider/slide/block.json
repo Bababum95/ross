@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/slider-slide",
+  "version": "0.1.0",
+  "title": "Slider slide",
+  "category": "theme",
+  "icon": "embed-photo",
+  "example": {},
+  "attributes": {},
+  "supports": {
+    "html": false
+  },
+  "parent": ["ross/slider"],
+  "textdomain": "ross",
+  "editorScript": "file:./index.js"
+}
