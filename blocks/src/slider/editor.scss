@@ -1,0 +1,8 @@
+.wp-block-ross-slider {
+  display: flex;
+
+  .block-editor-inner-blocks,
+  .block-editor-block-list__layout {
+    display: contents;
+  }
+}

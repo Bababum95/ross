@@ -5,8 +5,12 @@ import {
 } from "@wordpress/block-editor";
 import { PanelBody, RangeControl, ToggleControl } from "@wordpress/components";
 
+import "./editor.scss";
+
 export const Edit = ({ attributes, setAttributes }) => {
-  const blockProps = useBlockProps();
+  const blockProps = useBlockProps({
+    style: { gap: attributes.spaceBetween } as React.CSSProperties,
+  });
 
   return (
     <div {...blockProps}>
