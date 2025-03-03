@@ -10,13 +10,52 @@
 
       <!-- wp:paragraph -->
       <p>
-        <a href="/"><strong>ROSS</strong><br />HVAC Repair &amp; Installation</a>
+        <a href="/"
+          ><strong>ROSS</strong><br />HVAC Repair &amp; Installation</a
+        >
       </p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:pattern {"slug":"ross/phone"} /-->
+    <!-- wp:group {"className":"phone","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group phone">
+      <!-- wp:image {"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+      <figure class="wp-block-image size-full">
+        <img
+          src="http://localhost:8000/wp-content/themes/ross/assets/icons/phone.svg"
+          alt="phone icon"
+          style="object-fit: cover"
+        />
+      </figure>
+      <!-- /wp:image -->
+
+      <!-- wp:paragraph -->
+      <p><a href="tel:+17078900438">+1 (707) 890-0438</a></p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:ross/hedaer-menu {"textColor":"#000000","textOverlayColor":"#E30B2E"} -->
+    <div
+      style="--text-color: #000000; --text-overlay-color: #e30b2e"
+      class="wp-block-ross-hedaer-menu"
+    >
+      <!-- wp:ross/hedaer-menu-item {"title":"HVAC"} -->
+      <div class="wp-block-ross-hedaer-menu-item">
+        <p class="wp-block-ross-hedaer-menu-item__title">HVAC</p>
+        <!-- wp:navigation {"ref":6,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
+      </div>
+      <!-- /wp:ross/hedaer-menu-item -->
+
+      <!-- wp:ross/hedaer-menu-item {"title":"Water Heaters"} -->
+      <div class="wp-block-ross-hedaer-menu-item">
+        <p class="wp-block-ross-hedaer-menu-item__title">Water Heaters</p>
+        <!-- wp:navigation {"ref":78,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
+      </div>
+      <!-- /wp:ross/hedaer-menu-item -->
+    </div>
+    <!-- /wp:ross/hedaer-menu -->
   </div>
   <!-- /wp:group -->
 </div>
