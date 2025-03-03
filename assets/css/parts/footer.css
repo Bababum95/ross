@@ -3,8 +3,7 @@
 .footer {
   background-color: #1a202c;
   color: var(--wp--preset--color--base, #fff);
-  padding-top: 60px;
-  padding-bottom: 18px;
+  padding-top: 50px;
 }
 
 .footer__logo {
@@ -21,4 +20,34 @@
   font-weight: 800;
   font-size: 24px;
   text-transform: uppercase;
+}
+
+.footer .wp-block-navigation-item {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footer .wp-block-navigation-item:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer__row {
+  padding: 11px 16px;
+  border-bottom: 1px solid #333a4a;
+}
+
+.footer__row:last-child {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .phone p {
+  font-size: 14px;
+}
+
+.footer_label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
 }
