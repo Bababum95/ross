@@ -7,3 +7,17 @@ div.wp-block-ross-services {
     margin-bottom: 23px;
   }
 }
+
+@media screen and (max-width: 928px) {
+  div.wp-block-ross-services {
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 54px;
+    }
+
+    &:last-child {
+      margin-bottom: 103px;
+    }
+  }
+}

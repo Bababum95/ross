@@ -38,6 +38,7 @@
     bottom: 0;
     right: 0;
     z-index: 2;
+    max-width: 100%;
   }
 
   .wp-block-navigation {
@@ -71,6 +72,21 @@
       &:hover {
         color: var(--text-overlay-color);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .wp-block-ross-services-item {
+    min-height: 466px;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 54px;
+    }
+
+    &__image {
+      max-height: 303px;
     }
   }
 }
