@@ -1,6 +1,94 @@
 .is-layout-flex > .wp-block-ross-hedaer-menu {
-  display: flex;
-  align-items: center;
-  gap: 36px;
   margin-left: auto;
+}
+
+.wp-block-ross-hedaer-menu {
+  &__List {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    transition: all 300ms cubic-bezier(0.4, 0.2, 0.8, 0.9);
+  }
+
+  &__button {
+    display: none;
+  }
+
+  .wp-block-ross-booking-button {
+    margin-left: 14px;
+  }
+}
+
+@media screen and (max-width: 1424px) {
+  .wp-block-ross-hedaer-menu {
+    &__List {
+      gap: 16px;
+    }
+
+    .wp-block-ross-booking-button {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .wp-block-ross-hedaer-menu {
+    &__List {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      left: 0;
+      top: -100%;
+      width: 100%;
+      max-height: 100%;
+      background-color: var(--wp--preset--color--base);
+      padding: 32px 16px;
+      overflow: auto;
+      box-sizing: border-box;
+      opacity: 0;
+
+      &.active {
+        transition: all 300ms cubic-bezier(0.1, 0.4, 0.8, 0.9);
+        top: var(--header-end, 91px);
+        opacity: 1;
+      }
+    }
+
+    &__overlay {
+      position: fixed;
+      left: 0;
+      top: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+      opacity: 0;
+      transition: opacity 300ms cubic-bezier(0.4, 0.2, 0.8, 0.9);
+
+      &.active {
+        transition: opacity 300ms cubic-bezier(0.1, 0.4, 0.8, 0.9);
+        top: var(--header-end, 91px);
+        opacity: 1;
+      }
+    }
+
+    &__button {
+      display: block;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+    }
+
+    .wp-block-ross-booking-button {
+      width: 100%;
+
+      .wp-element-button {
+        font-size: 16px;
+        width: 100%;
+        padding: 12.5px;
+      }
+    }
+  }
 }
