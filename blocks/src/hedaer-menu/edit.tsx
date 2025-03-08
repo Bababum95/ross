@@ -19,8 +19,11 @@ export const Edit = ({ attributes, setAttributes }) => {
   return (
     <div {...blockProps}>
       <InnerBlocks
-        allowedBlocks={["ross/hedaer-menu-item"]}
-        template={[["ross/hedaer-menu-item", {}]]}
+        allowedBlocks={["ross/hedaer-menu-item", "ross/booking-button"]}
+        template={[
+          ["ross/hedaer-menu-item", {}],
+          ["ross/booking-button", {}],
+        ]}
       />
       <InspectorControls>
         <PanelColorSettings

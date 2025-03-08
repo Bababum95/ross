@@ -610,7 +610,8 @@
           }
         },
         "typography": {
-          "fontSize": "var:preset|font-size|medium"
+          "fontSize": "var:preset|font-size|medium",
+          "lineHeight": "1"
         }
       },
       "caption": {
