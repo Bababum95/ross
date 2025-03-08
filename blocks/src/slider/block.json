@@ -8,18 +8,6 @@
   "icon": "embed-photo",
   "example": {},
   "attributes": {
-    "spaceBetween": {
-      "type": "number",
-      "default": 40
-    },
-    "spaceBetweenPhone": {
-      "type": "number",
-      "default": 28
-    },
-    "isGrid": {
-      "type": "boolean",
-      "default": false
-    },
     "autoplay": {
       "type": "boolean",
       "default": false
@@ -28,13 +16,32 @@
       "type": "number",
       "default": 5000
     },
-    "slidesPerViewPhone": {
-      "type": "number",
-      "default": 1
-    },
     "loop": {
       "type": "boolean",
       "default": true
+    },
+    "breakpoints": {
+      "type": "array",
+      "default": [
+        {
+          "point": 0,
+          "isGrid": false,
+          "slidesPerView": 1,
+          "spaceBetween": 28
+        },
+        {
+          "point": 480,
+          "isGrid": false,
+          "slidesPerView": 2,
+          "spaceBetween": 28
+        },
+        {
+          "point": 1024,
+          "isGrid": false,
+          "slidesPerView": 3,
+          "spaceBetween": 40
+        }
+      ]
     }
   },
   "supports": {

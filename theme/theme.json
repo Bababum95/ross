@@ -687,6 +687,11 @@
       "area": "uncategorized",
       "name": "partners",
       "title": "Partners"
+    },
+    {
+      "area": "uncategorized",
+      "name": "housecallpro-button",
+      "title": "Housecallpro button"
     }
   ],
   "customTemplates": [

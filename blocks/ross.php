@@ -28,6 +28,7 @@ if (! defined('ABSPATH')) {
 function blocks_init()
 {
 	register_block_type(__DIR__ . '/build/about');
+	register_block_type(__DIR__ . '/build/booking-button');
 	register_block_type(__DIR__ . '/build/hero-banner');
 	register_block_type(__DIR__ . '/build/partner');
 	register_block_type(__DIR__ . '/build/social-links');

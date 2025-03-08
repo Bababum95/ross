@@ -5,30 +5,28 @@ import classNames from "classnames";
 export const Save = ({ attributes }) => {
   const options: SwiperOptions = {
     loop: attributes.loop,
-    breakpoints: {
-      480: {
-        spaceBetween: attributes.spaceBetween,
-        slidesPerView: "auto",
-      },
-      0: {
-        spaceBetween: attributes.spaceBetweenPhone,
-        slidesPerView: attributes.slidesPerViewPhone,
-      },
-    },
+    breakpoints: {},
   };
-
-  if (attributes.isGrid) {
-    options.breakpoints["0"].grid = {
-      rows: 2,
-      fill: "row",
-    };
-  }
 
   if (attributes.autoplay) {
     options.autoplay = {
       delay: attributes.autoplaySpeed,
     };
   }
+
+  attributes.breakpoints.forEach((breakpoint) => {
+    options.breakpoints[breakpoint.point] = {
+      slidesPerView: breakpoint.slidesPerView,
+      spaceBetween: breakpoint.spaceBetween,
+    };
+
+    if (breakpoint.isGrid) {
+      options.breakpoints[breakpoint.point].grid = {
+        rows: 2,
+        fill: "row",
+      };
+    }
+  });
 
   const blockProps = useBlockProps.save({
     "data-options": JSON.stringify(options),
