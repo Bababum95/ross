@@ -52,6 +52,7 @@
 
     &:hover nav.wp-block-navigation {
       padding-top: 40px;
+      max-height: 400px;
     }
   }
 }
@@ -72,10 +73,10 @@
       background: #f6f6f6;
       border-radius: 2px;
       padding: 16px 0px;
-      width: 100%;
+      width: 100% !important;
       transition:
-        max-height 300ms linear,
-        padding-top 200ms linear;
+        max-height 400ms linear,
+        padding-top 300ms linear;
     }
 
     .wp-block-navigation-item {
@@ -94,7 +95,7 @@
         max-height: 400px;
         transition:
           max-height 400ms ease-out,
-          padding-top 200ms linear;
+          padding-top 300ms linear;
       }
     }
   }

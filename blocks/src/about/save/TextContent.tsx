@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { RichText } from "@wordpress/block-editor";
+import { RichText, InnerBlocks } from "@wordpress/block-editor";
 
 import type { TextContentAttributes } from "../types";
 
@@ -16,6 +16,7 @@ export const TextContent: FC<TextContentAttributes> = ({
           value={title}
           className="wp-block-ross-about__title"
         />
+        <InnerBlocks.Content />
       </div>
       <RichText.Content
         tagName="p"

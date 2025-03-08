@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { RichText } from "@wordpress/block-editor";
+import { RichText, InnerBlocks } from "@wordpress/block-editor";
 
 import type { TextContentAttributes } from "../types";
 
@@ -22,6 +22,19 @@ export const TextContent: FC<Props> = ({
           value={title}
           onChange={(value) => setAttributes({ title: value })}
           className="wp-block-ross-about__title"
+        />
+        <InnerBlocks
+          allowedBlocks={["ross/booking-button"]}
+          template={[
+            [
+              "ross/booking-button",
+              {
+                label: "Book now",
+                orgname: "Ross-HVAC-and-Appliance-repair",
+                token: "5dd312eada5d40d89e5b3c1e44804feb",
+              },
+            ],
+          ]}
         />
       </div>
       <RichText

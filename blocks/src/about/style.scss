@@ -2,6 +2,7 @@
   &__text-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 60px;
   }
 
@@ -115,6 +116,79 @@
       display: inline-block;
       background-color: var(--wp--preset--color--accent-2);
       color: var(--wp--preset--color--contrast);
+    }
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .wp-block-ross-about {
+    &__text-content {
+      padding: 0 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .wp-block-ross-about {
+    &__text-content {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 32px;
+
+      &-left {
+        display: contents;
+
+        .wp-block-ross-booking-button {
+          order: 2;
+
+          .wp-element-button {
+            font-size: 16px;
+            padding: 12.5px 32px;
+          }
+        }
+      }
+    }
+
+    &__description {
+      flex-basis: auto;
+      margin-bottom: 16px;
+    }
+
+    &__main {
+      flex-direction: column;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__image {
+      width: 100%;
+      min-height: 326px;
+    }
+
+    &__highlights {
+      padding: 0 16px;
+      gap: 16px;
+    }
+
+    &__license {
+      margin: 0 16px;
+
+      &::after {
+        clip-path: none;
+        top: auto;
+        left: 0;
+        height: 62px;
+        width: 100%;
+      }
+
+      &-number {
+        max-width: 100%;
+      }
+
+      &-content {
+        padding: 16px;
+        flex-direction: column;
+      }
     }
   }
 }
