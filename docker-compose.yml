@@ -24,6 +24,7 @@ services:
     volumes:
       - wordpress_data:/var/www/html
       - ./theme:/var/www/html/wp-content/themes/ross
+      - ./blocks/assets:/var/www/html/wp-content/plugins/ross/assets
       - ./blocks/build:/var/www/html/wp-content/plugins/ross/build
       - ./blocks/ross.php:/var/www/html/wp-content/plugins/ross/ross.php
       - ./php.ini:/usr/local/etc/php/php.ini

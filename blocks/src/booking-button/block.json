@@ -19,6 +19,12 @@
     "label": {
       "type": "string",
       "default": "Book now"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
     }
   },
   "supports": {

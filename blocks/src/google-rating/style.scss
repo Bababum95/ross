@@ -1,0 +1,21 @@
+.wp-block-ross-google-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__score {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__review-count {
+    font-weight: 500;
+    font-size: 8px;
+  }
+}

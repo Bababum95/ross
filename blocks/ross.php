@@ -18,6 +18,8 @@ if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
+define('ROSS_BLOCKS_URL', plugin_dir_url(__FILE__));
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -30,6 +32,7 @@ function blocks_init()
 	register_block_type(__DIR__ . '/build/about');
 	register_block_type(__DIR__ . '/build/booking-button');
 	register_block_type(__DIR__ . '/build/hero-banner');
+	register_block_type(__DIR__ . '/build/google-rating');
 	register_block_type(__DIR__ . '/build/partner');
 	register_block_type(__DIR__ . '/build/social-links');
 

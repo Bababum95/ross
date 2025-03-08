@@ -2,6 +2,7 @@ import {
   useBlockProps,
   InspectorControls,
   RichText,
+  PanelColorSettings,
 } from "@wordpress/block-editor";
 import { PanelBody, TextControl } from "@wordpress/components";
 
@@ -15,6 +16,10 @@ export const Edit = ({ attributes, setAttributes }) => {
         onChange={(label) => setAttributes({ label })}
         tagName="button"
         className="wp-element-button"
+        style={{
+          color: attributes.textColor,
+          backgroundColor: attributes.bgColor,
+        }}
       />
 
       <InspectorControls>
@@ -30,6 +35,26 @@ export const Edit = ({ attributes, setAttributes }) => {
             onChange={(orgname) => setAttributes({ orgname })}
           />
         </PanelBody>
+        <PanelColorSettings
+          title="Color Settings"
+          initialOpen={false}
+          colorSettings={[
+            {
+              value: attributes.textColor,
+              onChange: (color) => setAttributes({ textColor: color }),
+              label: "Text",
+              enableAlpha: true,
+              clearable: true,
+            },
+            {
+              value: attributes.bgColor,
+              onChange: (color) => setAttributes({ bgColor: color }),
+              label: "Background",
+              enableAlpha: true,
+              clearable: true,
+            },
+          ]}
+        />
       </InspectorControls>
     </div>
   );

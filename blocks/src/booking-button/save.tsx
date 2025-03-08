@@ -1,19 +1,23 @@
 import { useBlockProps, RichText } from "@wordpress/block-editor";
 
 export const Save = ({ attributes }) => {
-  const { token, orgname, label } = attributes;
+  const { token, orgname } = attributes;
   const blockProps = useBlockProps.save();
 
   return (
     <div {...blockProps}>
       <RichText.Content
-        value={label}
+        value={attributes.label}
         tagName="button"
         className="wp-element-button"
         data-token={token}
         data-orgname={orgname}
         // @ts-ignore
         onClick="HCPWidget.openModal()"
+        style={{
+          color: attributes.textColor,
+          backgroundColor: attributes.bgColor,
+        }}
       />
       <script
         async
