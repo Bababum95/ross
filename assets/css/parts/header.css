@@ -7,6 +7,7 @@ header.wp-block-template-part {
   right: 0;
   z-index: 100;
   background-color: var(--wp--preset--color--base);
+  --header-end: calc(var(--wp-admin--admin-bar--height, 0) + 81px);
 }
 
 .header {
@@ -31,20 +32,50 @@ header.wp-block-template-part {
 
 .header__logo p {
   margin: 0;
-  font-size: clamp(0.8125rem, 0.725rem + 0.4375vw, 1.25rem);
+  font-size: clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
   font-weight: 500;
 }
 
 .header__logo p strong {
   font-weight: 700;
+  font-size: clamp(0.8125rem, 0.725rem + 0.4375vw, 1.25rem);
 }
 
 .header__logo a {
   text-decoration-line: none;
 }
 
+@media screen and (max-width: 1424px) {
+  .header__container {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header__container .phone,
+  .header__container .wp-block-ross-google-rating {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  header.wp-block-template-part {
+    --header-end: calc(var(--wp-admin--admin-bar--height, 0) + 91px);
+  }
+
+  .header {
+    padding: 25px 16px 25px 10px;
+  }
+
+  .header__logo img {
+    width: 43px;
+    height: 40px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   header.wp-block-template-part {
     top: 0;
+    --header-end: 91px;
   }
 }

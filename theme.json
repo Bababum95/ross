@@ -622,7 +622,8 @@
       },
       "h1": {
         "typography": {
-          "fontSize": "var:preset|font-size|xx-large"
+          "fontSize": "var:preset|font-size|xx-large",
+          "lineHeight": "1.1"
         }
       },
       "h2": {
