@@ -1,7 +1,13 @@
 import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 
 export const Save = ({ attributes }) => {
-  const blockProps = useBlockProps.save();
+  const blockProps = useBlockProps.save({
+    className: attributes.layout,
+    style: {
+      "--bg-color": attributes.bgColor,
+      "--text-color": attributes.textColor,
+    } as React.CSSProperties,
+  });
 
   return (
     <div {...blockProps}>

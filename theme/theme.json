@@ -29,7 +29,7 @@
           "slug": "accent-2"
         },
         {
-          "color": "#503AA8",
+          "color": "#f7f7f7",
           "name": "Accent 3",
           "slug": "accent-3"
         },
@@ -701,6 +701,11 @@
       "name": "page-no-title",
       "postTypes": ["page"],
       "title": "Page No Title"
+    },
+    {
+      "name": "service",
+      "postTypes": ["page"],
+      "title": "Service"
     },
     {
       "name": "contacts",

@@ -16,6 +16,16 @@
       "source": "attribute",
       "selector": ".wp-block-ross-hero-banner__image",
       "attribute": "src"
+    },
+    "layout": {
+      "type": "string",
+      "default": "contained"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
     }
   },
   "supports": {
