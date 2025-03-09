@@ -18,13 +18,15 @@ export const Edit = ({ attributes, setAttributes }) => {
 
   return (
     <div {...blockProps}>
-      <InnerBlocks
-        allowedBlocks={["ross/hedaer-menu-item", "ross/booking-button"]}
-        template={[
-          ["ross/hedaer-menu-item", {}],
-          ["ross/booking-button", {}],
-        ]}
-      />
+      <nav className="wp-block-ross-hedaer-menu__List">
+        <InnerBlocks
+          allowedBlocks={["ross/hedaer-menu-item", "ross/booking-button"]}
+          template={[
+            ["ross/hedaer-menu-item", {}],
+            ["ross/booking-button", {}],
+          ]}
+        />
+      </nav>
       <InspectorControls>
         <PanelColorSettings
           title="Color Settings"

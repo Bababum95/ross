@@ -8,9 +8,7 @@ import { PanelBody, RangeControl, ToggleControl } from "@wordpress/components";
 import "./editor.scss";
 
 export const Edit = ({ attributes, setAttributes }) => {
-  const blockProps = useBlockProps({
-    style: { gap: attributes.spaceBetween } as React.CSSProperties,
-  });
+  const blockProps = useBlockProps();
 
   const handleCHangeBreakpoint = (
     value: string | number | boolean,
