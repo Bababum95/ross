@@ -18,6 +18,10 @@ if (! function_exists('ross_enqueue_styles')) :
         if (is_front_page()) {
             wp_enqueue_style('ross-front-page-style', ROSS_URI . '/assets/css/templates/front-page.css', array(), VERSION);
         }
+
+        if (is_page_template('contacts')) {
+            wp_enqueue_style('ross-contacts-style', ROSS_URI . '/assets/css/templates/contacts.css', array(), VERSION);
+        }
     }
 endif;
 add_action('wp_enqueue_scripts', 'ross_enqueue_styles');

@@ -701,6 +701,11 @@
       "name": "page-no-title",
       "postTypes": ["page"],
       "title": "Page No Title"
+    },
+    {
+      "name": "contacts",
+      "postTypes": ["page"],
+      "title": "Contacts and Locations"
     }
   ]
 }

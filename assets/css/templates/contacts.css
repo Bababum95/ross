@@ -1,0 +1,47 @@
+.main {
+  max-width: var(--wp--style--global--content-size, 1480px);
+  margin: 70px auto;
+  padding: 0 16px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.725rem + 0.75vw, 1.625rem);
+}
+
+.work-hours {
+  font-size: clamp(1.125rem, 1.025rem + 0.5vw, 1.625rem);
+}
+
+.work-hours__label {
+  font-weight: 500;
+  text-align: end;
+}
+
+.work-hours__value {
+  font-weight: 400;
+  color: var(--wp--preset--color--accent-1);
+}
+
+.contacts__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 300px;
+  gap: 22px;
+  min-width: 280px;
+}
+
+.contacts__item p {
+  font-weight: 400;
+  font-size: clamp(1.125rem, 1.025rem + 0.5vw, 1.625rem);
+}
+
+@media screen and (max-width: 925px) {
+  .work-hours__label {
+    font-weight: 500;
+    text-align: start;
+  }
+}

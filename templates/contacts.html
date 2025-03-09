@@ -1,0 +1,45 @@
+<!-- wp:template-part {"slug":"header","theme":"ross"} /-->
+
+<!-- wp:group {"tagName":"main","className":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"},"padding":{"right":"16px","left":"16px"}}},"layout":{"type":"default"}} -->
+<main
+  class="wp-block-group main"
+  style="
+    margin-top: var(--wp--preset--spacing--60);
+    padding-right: 16px;
+    padding-left: 16px;
+  "
+>
+  <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group alignfull">
+    <!-- wp:group {"style":{"spacing":{"blockGap":"12px"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
+      <!-- wp:post-title {"level":1} /-->
+
+      <!-- wp:paragraph {"className":"subtitle"} -->
+      <p class="subtitle">
+        Feel free to write, call and visit us. We really love to communicate
+        with our clients.
+      </p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"work-hours","style":{"spacing":{"blockGap":"12px"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group work-hours">
+      <!-- wp:paragraph {"className":"work-hours__label"} -->
+      <p class="work-hours__label">Our work hours</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"className":"work-hours__value"} -->
+      <p class="work-hours__value">8am - 6pm every day</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"ross"} /-->
