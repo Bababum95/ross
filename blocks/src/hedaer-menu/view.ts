@@ -1,7 +1,9 @@
 const button = document.querySelector(".wp-block-ross-hedaer-menu__button");
 const menu = document.querySelector(".wp-block-ross-hedaer-menu__List");
 const overlay = document.querySelector(".wp-block-ross-hedaer-menu__overlay");
-const subMenus = document.querySelectorAll(".wp-block-ross-hedaer-menu-item");
+const subMenus: NodeListOf<HTMLElement> = document.querySelectorAll(
+  ".wp-block-ross-hedaer-menu-item",
+);
 
 button?.addEventListener("click", () => {
   menu.classList.toggle("active");
@@ -14,6 +16,9 @@ overlay?.addEventListener("click", () => {
 });
 
 subMenus?.forEach((subMenu) => {
+  const panel: HTMLElement = subMenu.querySelector("nav.wp-block-navigation");
+  subMenu.style.setProperty("--max-height", panel.scrollHeight + "px");
+
   subMenu.addEventListener("click", () => {
     subMenu.classList.toggle("active");
   });
