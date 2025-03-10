@@ -1,0 +1,29 @@
+.achievements__item {
+  flex: 1;
+  padding: 40px 32px;
+  max-width: 440px;
+}
+
+.achievements__item p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1500px) {
+  .main {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .achievements__item {
+    min-width: 40%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .achievements__item {
+    min-width: 100%;
+  }
+}
