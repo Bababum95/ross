@@ -42,6 +42,9 @@ function blocks_init()
 	register_block_type(__DIR__ . '/build/header-menu');
 	register_block_type(__DIR__ . '/build/header-menu/item');
 
+	register_block_type(__DIR__ . '/build/how-we-work');
+	register_block_type(__DIR__ . '/build/how-we-work/item');
+
 	register_block_type(__DIR__ . '/build/services');
 	register_block_type(__DIR__ . '/build/services/item');
 
