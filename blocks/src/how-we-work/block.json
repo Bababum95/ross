@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "title": "How We Work",
   "category": "theme",
-  "icon": "editor-ul",
+  "icon": "editor-ol",
   "example": {},
   "attributes": {
     "title": {

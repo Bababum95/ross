@@ -50,5 +50,8 @@ function blocks_init()
 
 	register_block_type(__DIR__ . '/build/slider');
 	register_block_type(__DIR__ . '/build/slider/slide');
+
+	register_block_type(__DIR__ . '/build/types');
+	register_block_type(__DIR__ . '/build/types/item');
 }
 add_action('init', 'blocks_init');

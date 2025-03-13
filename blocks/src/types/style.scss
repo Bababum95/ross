@@ -1,0 +1,25 @@
+.wp-block-ross-types {
+  &__title {
+    font-size: clamp(1.625rem, 1.35rem + 1.375vw, 3rem);
+    font-weight: 500;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wp-block-ross-types {
+    &__list {
+      margin-top: 32px;
+    }
+  }
+}

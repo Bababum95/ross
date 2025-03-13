@@ -1,0 +1,39 @@
+.wp-block-ross-types-item {
+  padding: 32px;
+  position: relative;
+  flex: 1;
+  max-width: 350px;
+  max-height: 350px;
+  aspect-ratio: 1;
+
+  &__label {
+    font-weight: 500;
+    font-size: clamp(1.25rem, 1.175rem + 0.375vw, 1.625rem);
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:nth-child(even) {
+    color: var(--wp--preset--color--base, #fff);
+    background-color: var(--wp--preset--color--accent-1);
+  }
+
+  &:nth-child(odd) {
+    background-color: #f6f6f6;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .wp-block-ross-types-item {
+    min-width: calc(50% - 12px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .wp-block-ross-types-item {
+    min-width: 100%;
+  }
+}
