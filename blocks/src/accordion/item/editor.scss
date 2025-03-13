@@ -1,5 +1,8 @@
-// .wp-block-ross-accordion {
-//   .wp-block-navigation {
-//     display: none;
-//   }
-// }
+.wp-block-ross-accordion-item.is-selected,
+.wp-block-ross-accordion-item.has-child-selected {
+  .wp-block-ross-accordion-item {
+    &__content {
+      max-height: none;
+    }
+  }
+}

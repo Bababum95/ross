@@ -8,8 +8,6 @@ import { PanelBody } from "@wordpress/components";
 
 import { Image } from "@/components/Image";
 
-import "./editor.scss";
-
 export const Edit = ({ attributes, setAttributes }) => {
   const blockProps = useBlockProps();
 
