@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/accordion-item",
+  "version": "0.1.0",
+  "title": "Accordion Item",
+  "category": "theme",
+  "icon": "menu",
+  "example": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ross",
+  "parent": ["ross/accordion"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

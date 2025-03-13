@@ -36,6 +36,9 @@ function blocks_init()
 	register_block_type(__DIR__ . '/build/partner');
 	register_block_type(__DIR__ . '/build/social-links');
 
+	register_block_type(__DIR__ . '/build/accordion');
+	register_block_type(__DIR__ . '/build/accordion/item');
+
 	register_block_type(__DIR__ . '/build/header-menu');
 	register_block_type(__DIR__ . '/build/header-menu/item');
 
