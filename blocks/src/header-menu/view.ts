@@ -1,8 +1,8 @@
-const button = document.querySelector(".wp-block-ross-hedaer-menu__button");
-const menu = document.querySelector(".wp-block-ross-hedaer-menu__List");
-const overlay = document.querySelector(".wp-block-ross-hedaer-menu__overlay");
+const button = document.querySelector(".wp-block-ross-header-menu__button");
+const menu = document.querySelector(".wp-block-ross-header-menu__List");
+const overlay = document.querySelector(".wp-block-ross-header-menu__overlay");
 const subMenus: NodeListOf<HTMLElement> = document.querySelectorAll(
-  ".wp-block-ross-hedaer-menu-item",
+  ".wp-block-ross-header-menu-item",
 );
 
 button?.addEventListener("click", () => {

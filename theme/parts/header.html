@@ -38,26 +38,66 @@
 
     <!-- wp:ross/google-rating {"place_id":"1"} /-->
 
-    <!-- wp:ross/hedaer-menu {"textColor":"#000000","textOverlayColor":"#E30B2E"} -->
+    <!-- wp:ross/header-menu {"textColor":"#000000","textOverlayColor":"#E30B2E"} -->
     <div
       style="--text-color: #000000; --text-overlay-color: #e30b2e"
-      class="wp-block-ross-hedaer-menu"
+      class="wp-block-ross-header-menu"
     >
-      <!-- wp:ross/hedaer-menu-item {"title":"HVAC"} -->
-      <div class="wp-block-ross-hedaer-menu-item">
-        <p class="wp-block-ross-hedaer-menu-item__title">HVAC</p>
-        <!-- wp:navigation {"ref":78,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
-      </div>
-      <!-- /wp:ross/hedaer-menu-item -->
+      <button class="wp-block-ross-header-menu__button">
+        <svg
+          width="40"
+          height="16"
+          viewBox="0 0 40 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="40" height="2" fill="#E30B2E"></rect>
+          <rect y="7" width="40" height="2" fill="#E30B2E"></rect>
+          <rect y="14" width="40" height="2" fill="#E30B2E"></rect>
+        </svg>
+      </button>
+      <div class="wp-block-ross-header-menu__overlay"></div>
+      <nav class="wp-block-ross-header-menu__List">
+        <!-- wp:ross/header-menu-item {"title":"HVAC"} -->
+        <div class="wp-block-ross-header-menu-item">
+          <p class="wp-block-ross-header-menu-item__title">HVAC</p>
+          <!-- wp:navigation {"ref":78,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
+        </div>
+        <!-- /wp:ross/header-menu-item -->
 
-      <!-- wp:ross/hedaer-menu-item {"title":"Water Heaters"} -->
-      <div class="wp-block-ross-hedaer-menu-item">
-        <p class="wp-block-ross-hedaer-menu-item__title">Water Heaters</p>
-        <!-- wp:navigation {"ref":78,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
-      </div>
-      <!-- /wp:ross/hedaer-menu-item -->
+        <!-- wp:ross/header-menu-item {"title":"Water Heaters"} -->
+        <div class="wp-block-ross-header-menu-item">
+          <p class="wp-block-ross-header-menu-item__title">Water Heaters</p>
+          <!-- wp:navigation {"ref":78,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
+        </div>
+        <!-- /wp:ross/header-menu-item -->
+
+        <!-- wp:ross/header-menu-item {"title":"About us"} -->
+        <div class="wp-block-ross-header-menu-item">
+          <p class="wp-block-ross-header-menu-item__title">About us</p>
+          <!-- wp:navigation {"ref":230,"overlayMenu":"never","layout":{"orientation":"vertical"}} /-->
+        </div>
+        <!-- /wp:ross/header-menu-item -->
+
+        <!-- wp:ross/booking-button {"token":"5dd312eada5d40d89e5b3c1e44804feb","orgname":"Ross-HVAC-and-Appliance-repair","metadata":{"categories":["ross"],"patternName":"ross/housecallpro-button","name":"Housecallpro button"}} -->
+        <div class="wp-block-ross-booking-button">
+          <button
+            class="wp-element-button"
+            data-token="5dd312eada5d40d89e5b3c1e44804feb"
+            data-orgname="Ross-HVAC-and-Appliance-repair"
+            onclick="HCPWidget.openModal()"
+          >
+            Book now
+          </button>
+          <script
+            async
+            src="https://online-booking.housecallpro.com/script.js?token=5dd312eada5d40d89e5b3c1e44804feb&amp;orgName=Ross-HVAC-and-Appliance-repair"
+          ></script>
+        </div>
+        <!-- /wp:ross/booking-button -->
+      </nav>
     </div>
-    <!-- /wp:ross/hedaer-menu -->
+    <!-- /wp:ross/header-menu -->
   </div>
   <!-- /wp:group -->
 </div>

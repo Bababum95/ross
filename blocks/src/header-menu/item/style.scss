@@ -1,4 +1,4 @@
-.wp-block-ross-hedaer-menu-item {
+.wp-block-ross-header-menu-item {
   position: relative;
   color: var(--text-color);
 
@@ -45,7 +45,7 @@
 }
 
 @media screen and (min-width: 928px) {
-  .wp-block-ross-hedaer-menu-item {
+  .wp-block-ross-header-menu-item {
     &:hover &__title {
       color: var(--text-overlay-color);
     }
@@ -58,7 +58,7 @@
 }
 
 @media screen and (max-width: 928px) {
-  .wp-block-ross-hedaer-menu-item {
+  .wp-block-ross-header-menu-item {
     padding: 16px 0;
     width: 100%;
 

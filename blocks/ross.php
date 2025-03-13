@@ -36,8 +36,8 @@ function blocks_init()
 	register_block_type(__DIR__ . '/build/partner');
 	register_block_type(__DIR__ . '/build/social-links');
 
-	register_block_type(__DIR__ . '/build/hedaer-menu');
-	register_block_type(__DIR__ . '/build/hedaer-menu/item');
+	register_block_type(__DIR__ . '/build/header-menu');
+	register_block_type(__DIR__ . '/build/header-menu/item');
 
 	register_block_type(__DIR__ . '/build/services');
 	register_block_type(__DIR__ . '/build/services/item');

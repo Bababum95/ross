@@ -18,11 +18,11 @@ export const Edit = ({ attributes, setAttributes }) => {
 
   return (
     <div {...blockProps}>
-      <nav className="wp-block-ross-hedaer-menu__List">
+      <nav className="wp-block-ross-header-menu__List">
         <InnerBlocks
-          allowedBlocks={["ross/hedaer-menu-item", "ross/booking-button"]}
+          allowedBlocks={["ross/header-menu-item", "ross/booking-button"]}
           template={[
-            ["ross/hedaer-menu-item", {}],
+            ["ross/header-menu-item", {}],
             ["ross/booking-button", {}],
           ]}
         />

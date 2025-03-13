@@ -1,8 +1,8 @@
-.is-layout-flex > .wp-block-ross-hedaer-menu {
+.is-layout-flex > .wp-block-ross-header-menu {
   margin-left: auto;
 }
 
-.wp-block-ross-hedaer-menu {
+.wp-block-ross-header-menu {
   &__List {
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 1424px) {
-  .wp-block-ross-hedaer-menu {
+  .wp-block-ross-header-menu {
     &__List {
       gap: 16px;
     }
@@ -32,7 +32,7 @@
 }
 
 @media screen and (max-width: 928px) {
-  .wp-block-ross-hedaer-menu {
+  .wp-block-ross-header-menu {
     &__List {
       position: fixed;
       display: flex;
