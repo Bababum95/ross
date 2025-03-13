@@ -1,9 +1,6 @@
 .wp-block-ross-about {
   &__text-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
   }
 
   &__subtitle {
@@ -23,9 +20,7 @@
   }
 
   &__description {
-    flex-basis: 65%;
     font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
-    font-family: var(--font-family);
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0.01em;
@@ -47,13 +42,10 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
-
-    flex-direction: column;
   }
 
   &__highlight {
     flex: 1;
-    padding: 17.5px 32px;
 
     &:nth-child(odd) {
       background-color: var(--wp--preset--color--accent-1);
@@ -118,12 +110,68 @@
       color: var(--wp--preset--color--contrast);
     }
   }
+
+  &.layout-1 {
+    .wp-block-ross-about {
+      &__text-content {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+
+      &__description {
+        flex-basis: 65%;
+      }
+
+      &__highlights {
+        flex-direction: column;
+      }
+
+      &__highlight {
+        padding: 17.5px 32px;
+      }
+    }
+  }
+
+  &.layout-2 {
+    .wp-block-ross-about {
+      &__text-content {
+        flex-direction: column;
+
+        &-left {
+          display: contents;
+
+          .wp-block-ross-booking-button {
+            order: 2;
+            margin-top: 32px;
+          }
+        }
+      }
+
+      &__highlights {
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+      }
+
+      &__highlight {
+        padding: 37.5px 32px 23px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 928px) {
   .wp-block-ross-about {
     &__text-content {
       padding: 0 16px;
+    }
+
+    &.layout-2 {
+      .wp-block-ross-about {
+        &__highlight {
+          min-width: calc(50% - 12px);
+        }
+      }
     }
   }
 }
@@ -133,7 +181,6 @@
     &__text-content {
       flex-direction: column;
       align-items: flex-start;
-      margin-bottom: 32px;
 
       &-left {
         display: contents;
@@ -168,6 +215,7 @@
     &__highlights {
       padding: 0 16px;
       gap: 16px;
+      flex-direction: column;
     }
 
     &__license {
@@ -188,6 +236,22 @@
       &-content {
         padding: 16px;
         flex-direction: column;
+      }
+    }
+
+    &.layout-1 {
+      .wp-block-ross-about {
+        &__text-content {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    &.layout-2 {
+      .wp-block-ross-about {
+        &__highlights {
+          margin-bottom: 32px;
+        }
       }
     }
   }

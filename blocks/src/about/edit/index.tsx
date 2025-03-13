@@ -3,6 +3,8 @@ import {
   PanelBody,
   TextControl,
   __experimentalDivider as Divider,
+  __experimentalToggleGroupControl as ToggleGroupControl,
+  __experimentalToggleGroupControlOption as ToggleGroupControlOption,
 } from "@wordpress/components";
 
 import { Image } from "@/components/Image";
@@ -11,8 +13,10 @@ import type { HilightType } from "../types";
 import { Highlights } from "../save/Highlights";
 import { License } from "../save/License";
 import { TextContent } from "./TextContent";
+import classNames from "classnames";
 
 export const Edit = ({ attributes, setAttributes }) => {
+  const { layout, title, description, highlights, mediaURL } = attributes;
   const blockProps = useBlockProps();
 
   const handleChangeHighlight = (value: string, index: number, key: string) => {
@@ -22,30 +26,50 @@ export const Edit = ({ attributes, setAttributes }) => {
   };
 
   return (
-    <div {...blockProps}>
-      <TextContent
-        setAttributes={setAttributes}
-        title={attributes.title}
-        description={attributes.description}
-      />
+    <div
+      {...blockProps}
+      className={classNames(blockProps.className, `layout-${layout}`)}
+    >
+      {layout === 1 && (
+        <TextContent
+          title={title}
+          description={description}
+          setAttributes={setAttributes}
+        />
+      )}
       <div className="wp-block-ross-about__main">
-        {attributes.mediaURL && (
-          <img
-            className="wp-block-ross-about__image"
-            src={attributes.mediaURL}
+        {mediaURL && (
+          <img className="wp-block-ross-about__image" src={mediaURL} />
+        )}
+        {layout === 1 ? (
+          <Highlights items={highlights} />
+        ) : (
+          <TextContent
+            title={title}
+            description={description}
+            setAttributes={setAttributes}
           />
         )}
-        <Highlights items={attributes.highlights} />
       </div>
+      {layout === 2 && <Highlights items={highlights} />}
       <License
         number={attributes.licenseNumber}
         link={attributes.licenseLink}
       />
       <InspectorControls>
-        <PanelBody title="Image">
+        <PanelBody title="Settings">
+          <ToggleGroupControl
+            label="Layout"
+            value={layout}
+            onChange={(value) => setAttributes({ layout: value })}
+          >
+            <ToggleGroupControlOption label="type 1" value={1} />
+            <ToggleGroupControlOption label="type 2" value={2} />
+          </ToggleGroupControl>
+          <Divider />
           <Image
             mediaID={attributes.mediaID}
-            mediaURL={attributes.mediaURL}
+            mediaURL={mediaURL}
             setAttributes={setAttributes}
           />
         </PanelBody>

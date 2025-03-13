@@ -25,6 +25,10 @@
       "type": "string",
       "default": ""
     },
+    "layout": {
+      "type": "number",
+      "default": 1
+    },
     "highlights": {
       "type": "array",
       "default": [
