@@ -16,7 +16,8 @@
     }
   },
   "supports": {
-    "html": false
+    "html": false,
+    "className": false
   },
   "textdomain": "ross",
   "editorScript": "file:./index.js",

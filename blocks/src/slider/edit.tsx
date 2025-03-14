@@ -34,6 +34,11 @@ export const Edit = ({ attributes, setAttributes }) => {
             onChange={(value) => setAttributes({ loop: value })}
           />
           <ToggleControl
+            label="Control buttons"
+            checked={attributes.showButtons}
+            onChange={(value) => setAttributes({ showButtons: value })}
+          />
+          <ToggleControl
             __nextHasNoMarginBottom
             label="Autoplay"
             checked={attributes.autoplay}

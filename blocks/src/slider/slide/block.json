@@ -9,7 +9,8 @@
   "example": {},
   "attributes": {},
   "supports": {
-    "html": false
+    "html": false,
+    "className": false
   },
   "parent": ["ross/slider"],
   "textdomain": "ross",

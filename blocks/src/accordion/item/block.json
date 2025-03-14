@@ -14,7 +14,8 @@
     }
   },
   "supports": {
-    "html": false
+    "html": false,
+    "className": false
   },
   "textdomain": "ross",
   "parent": ["ross/accordion"],

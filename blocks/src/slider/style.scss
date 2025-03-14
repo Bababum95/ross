@@ -2,7 +2,34 @@
 @import "~swiper/scss/grid";
 
 .wp-block-ross-slider {
-  .wp-block-ross-slider-slide {
-    width: fit-content;
+  position: relative;
+
+  &__button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.swiper-button-next {
+      right: -92px;
+    }
+
+    &.swiper-button-prev {
+      left: -92px;
+    }
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .wp-block-ross-slider {
+    &__button {
+      display: none;
+    }
   }
 }
