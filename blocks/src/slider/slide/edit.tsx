@@ -10,7 +10,7 @@ export const Edit = () => {
       {...blockProps}
       className={classNames(blockProps.className, "swiper-slide")}
     >
-      <InnerBlocks allowedBlocks={["ross/partner"]} />
+      <InnerBlocks allowedBlocks={["ross/partner", "ross/service"]} />
     </SwiperSlide>
   );
 };

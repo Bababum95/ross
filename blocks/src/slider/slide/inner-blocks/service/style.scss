@@ -1,0 +1,29 @@
+.wp-block-ross-service {
+  background-color: var(--bg-color);
+  display: block;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  padding: 32px;
+  aspect-ratio: 460 / 408;
+
+  &__label {
+    position: relative;
+    font-size: clamp(1.25rem, 1.175rem + 0.375vw, 1.625rem);
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--text-color);
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: calc(100% - 60px);
+    z-index: 1;
+  }
+}

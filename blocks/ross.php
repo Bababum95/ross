@@ -33,7 +33,6 @@ function blocks_init()
 	register_block_type(__DIR__ . '/build/booking-button');
 	register_block_type(__DIR__ . '/build/hero-banner');
 	register_block_type(__DIR__ . '/build/google-rating');
-	register_block_type(__DIR__ . '/build/partner');
 	register_block_type(__DIR__ . '/build/social-links');
 
 	register_block_type(__DIR__ . '/build/accordion');
@@ -50,6 +49,8 @@ function blocks_init()
 
 	register_block_type(__DIR__ . '/build/slider');
 	register_block_type(__DIR__ . '/build/slider/slide');
+	register_block_type(__DIR__ . '/build/slider/slide/inner-blocks/partner');
+	register_block_type(__DIR__ . '/build/slider/slide/inner-blocks/service');
 
 	register_block_type(__DIR__ . '/build/types');
 	register_block_type(__DIR__ . '/build/types/item');
