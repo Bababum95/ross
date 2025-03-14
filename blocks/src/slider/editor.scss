@@ -6,4 +6,13 @@
   .block-editor-block-list__layout {
     display: contents;
   }
+
+  .wp-block-ross-slider-slide {
+    max-width: 460px;
+    min-width: 200px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }

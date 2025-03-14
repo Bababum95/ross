@@ -20,11 +20,11 @@ if (! function_exists('ross_enqueue_styles')) :
         }
 
         if (is_page_template('contacts')) {
-            wp_enqueue_style('ross-contacts-style', ROSS_URI . '/assets/css/templates/contacts.css', array(), VERSION);
+            wp_enqueue_style('ross-template-contacts-style', ROSS_URI . '/assets/css/templates/contacts.css', array(), VERSION);
         }
 
         if (is_page_template('service')) {
-            wp_enqueue_style('ross-service-style', ROSS_URI . '/assets/css/templates/service.css', array(), VERSION);
+            wp_enqueue_style('ross-template-service-style', ROSS_URI . '/assets/css/templates/service.css', array(), VERSION);
         }
     }
 endif;

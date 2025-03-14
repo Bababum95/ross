@@ -58,7 +58,7 @@ export const Edit = ({ attributes, setAttributes }) => {
           <RangeControl
             __nextHasNoMarginBottom
             __next40pxDefaultSize
-            label="Autoplay speed"
+            label="Breakpoints"
             value={attributes.breakpoints.length}
             max={10}
             min={0}
