@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/slider",
+  "version": "0.1.0",
+  "title": "Slider",
+  "category": "theme",
+  "icon": "embed-photo",
+  "example": {},
+  "attributes": {
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 5000
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showButtons": {
+      "type": "boolean",
+      "default": false
+    },
+    "breakpoints": {
+      "type": "array",
+      "default": [
+        {
+          "point": 0,
+          "isGrid": false,
+          "slidesPerView": 1,
+          "spaceBetween": 28
+        },
+        {
+          "point": 480,
+          "isGrid": false,
+          "slidesPerView": 2,
+          "spaceBetween": 28
+        },
+        {
+          "point": 1024,
+          "isGrid": false,
+          "slidesPerView": 3,
+          "spaceBetween": 40
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "className": false
+  },
+  "textdomain": "ross",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
