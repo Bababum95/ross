@@ -1,0 +1,9 @@
+{
+  "name": "ross",
+  "version": "1.0.0",
+  "author": "Bababum",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "update-theme": "git subtree split --prefix=theme -B theme && git push origin theme --force"
+  }
+}
