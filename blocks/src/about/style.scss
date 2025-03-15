@@ -249,6 +249,10 @@
 
     &.layout-2 {
       .wp-block-ross-about {
+        &__text-content {
+          order: -1;
+        }
+
         &__highlights {
           margin-bottom: 32px;
         }
