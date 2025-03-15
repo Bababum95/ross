@@ -18,7 +18,7 @@ export const Save = ({ attributes }) => {
         {layout === 1 ? (
           <Highlights items={highlights} />
         ) : (
-          <TextContent title={title} description={description} />
+          <TextContent title={title} description={description} blockName={attributes.blockName} />
         )}
       </div>
       {layout === 2 && <Highlights items={highlights} />}

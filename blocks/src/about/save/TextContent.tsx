@@ -6,11 +6,12 @@ import type { TextContentAttributes } from "../types";
 export const TextContent: FC<TextContentAttributes> = ({
   title,
   description,
+  blockName = true,
 }) => {
   return (
     <div className="wp-block-ross-about__text-content">
       <div className="wp-block-ross-about__text-content-left">
-        <p className="wp-block-ross-about__subtitle">About us</p>
+        {blockName && <p className="wp-block-ross-about__subtitle">About us</p>}
         <RichText.Content
           tagName="h2"
           value={title}

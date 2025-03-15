@@ -2,6 +2,7 @@ import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
 import {
   PanelBody,
   TextControl,
+  ToggleControl,
   __experimentalDivider as Divider,
   __experimentalToggleGroupControl as ToggleGroupControl,
   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
@@ -48,6 +49,7 @@ export const Edit = ({ attributes, setAttributes }) => {
             title={title}
             description={description}
             setAttributes={setAttributes}
+            blockName={attributes.blockName}
           />
         )}
       </div>
@@ -66,6 +68,11 @@ export const Edit = ({ attributes, setAttributes }) => {
             <ToggleGroupControlOption label="type 1" value={1} />
             <ToggleGroupControlOption label="type 2" value={2} />
           </ToggleGroupControl>
+          <ToggleControl
+            label="Show block name"
+            checked={attributes.blockName}
+            onChange={(value) => setAttributes({ blockName: value })}
+          />
           <Divider />
           <Image
             mediaID={attributes.mediaID}

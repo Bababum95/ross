@@ -57,6 +57,10 @@
     "licenseLink": {
       "type": "string",
       "default": ""
+    },
+    "blockName": {
+      "type": "boolean",
+      "default": true
     }
   },
   "supports": {

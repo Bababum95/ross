@@ -1,6 +1,7 @@
 export type TextContentAttributes = {
   title: string;
   description: string;
+  blockName?: boolean;
 };
 
 export type HilightType = {
