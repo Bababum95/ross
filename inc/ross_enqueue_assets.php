@@ -34,6 +34,10 @@ if (! function_exists('ross_enqueue_styles')) :
         if (is_single()) {
             wp_enqueue_style('ross-template-single-style', ROSS_URI . '/assets/css/templates/single-post.css', array(), VERSION);
         }
+
+        if (is_home()) {
+            wp_enqueue_style('ross-template-home-style', ROSS_URI . '/assets/css/templates/home.css', array(), VERSION);
+        }
     }
 endif;
 add_action('wp_enqueue_scripts', 'ross_enqueue_styles');
