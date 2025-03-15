@@ -10,6 +10,7 @@
     "lint:js": "wp-scripts lint-js",
     "packages-update": "wp-scripts packages-update",
     "plugin-zip": "wp-scripts plugin-zip",
+    "unzip": "unzip -o ./ross.zip -d .",
     "start": "wp-scripts start --webpack-copy-php"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@
   "author": "Bababum",
   "license": "GPL-2.0-or-later",
   "scripts": {
-    "update-theme": "git subtree split --prefix=theme -b theme && git push origin theme --force"
+    "git-push-theme": "git subtree split --prefix=theme -b theme && git push origin theme --force",
+    "git-push-blocks": "git subtree split --prefix=blocks/ross -b ross && git push origin ross --force"
   }
 }
