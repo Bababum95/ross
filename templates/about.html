@@ -1,9 +1,25 @@
 <!-- wp:template-part {"slug":"header","theme":"ross"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top: 0">
-  <!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
-</main>
+<!-- wp:group {"className":"wrapper first","style":{"spacing":{"blockGap":"12px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group wrapper first">
+  <!-- wp:heading {"level":1} -->
+  <h1 class="wp-block-heading">
+    About
+    <mark
+      style="background-color: rgba(0, 0, 0, 0)"
+      class="has-inline-color has-accent-1-color"
+    >
+      ROSS
+    </mark>
+  </h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph -->
+  <p>HVAC And Appliance Services</p>
+  <!-- /wp:paragraph -->
+</div>
 <!-- /wp:group -->
+
+<!-- wp:post-content {"align":"full","layout":{"type":"default"}} /-->
 
 <!-- wp:template-part {"slug":"footer","theme":"ross"} /-->

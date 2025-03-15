@@ -1,0 +1,35 @@
+main {
+  padding: 72px 16px 120px !important;
+}
+
+.wp-block-column img,
+.wp-block-column .wp-block-image {
+  display: block;
+  width: 100%;
+}
+
+.wp-block-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 781px) {
+  main {
+    padding: 52px 16px !important;
+  }
+
+  .wp-block-column {
+    align-items: flex-start;
+  }
+
+  .wp-block-column p {
+    margin-left: 24px;
+  }
+
+  .wp-block-column:has(img) {
+    order: -1;
+  }
+}
