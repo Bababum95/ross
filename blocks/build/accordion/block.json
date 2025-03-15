@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "theme",
+  "icon": "editor-textcolor",
+  "example": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaID": {
+      "type": "number"
+    },
+    "mediaURL": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-ross-accordion__image",
+      "attribute": "src"
+    }
+  },
+  "supports": {
+    "html": false,
+    "className": false
+  },
+  "textdomain": "ross",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ross/hero-banner",
+  "version": "0.1.0",
+  "title": "Hero Banner",
+  "category": "theme",
+  "icon": "embed-photo",
+  "example": {},
+  "attributes": {
+    "mediaID": {
+      "type": "number"
+    },
+    "mediaURL": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-ross-hero-banner__image",
+      "attribute": "src"
+    },
+    "layout": {
+      "type": "string",
+      "default": "contained"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ross",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
