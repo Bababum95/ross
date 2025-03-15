@@ -26,6 +26,10 @@ if (! function_exists('ross_enqueue_styles')) :
         if (is_page_template('service')) {
             wp_enqueue_style('ross-template-service-style', ROSS_URI . '/assets/css/templates/service.css', array(), VERSION);
         }
+
+        if (is_page_template('about')) {
+            wp_enqueue_style('ross-template-about-style', ROSS_URI . '/assets/css/templates/about.css', array(), VERSION);
+        }
     }
 endif;
 add_action('wp_enqueue_scripts', 'ross_enqueue_styles');

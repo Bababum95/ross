@@ -711,6 +711,11 @@
       "name": "contacts",
       "postTypes": ["page"],
       "title": "Contacts and Locations"
+    },
+    {
+      "name": "about",
+      "postTypes": ["page"],
+      "title": "About us"
     }
   ]
 }
