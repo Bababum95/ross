@@ -12,6 +12,7 @@ Version: 1.0
 /* elements */
 @import url("./assets/css/elements/button.css");
 /* patterns */
+@import url("./assets/css/patterns/map.css");
 @import url("./assets/css/patterns/partners.css");
 /* parts */
 @import url("./assets/css/parts/header.css");

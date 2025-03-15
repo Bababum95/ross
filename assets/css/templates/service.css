@@ -9,6 +9,22 @@
   font-size: 24px;
 }
 
+div.wp-block-ross-accordion {
+  margin: 198px auto 82px;
+}
+
+div.wp-block-ross-types {
+  margin: 138px auto 170px;
+}
+
+div.wp-block-ross-about {
+  margin-bottom: 112px;
+}
+
+.wp-gr {
+  margin: 120px auto 208px !important;
+}
+
 @media screen and (max-width: 1500px) {
   .main {
     padding: 0 16px;
@@ -25,5 +41,21 @@
 @media screen and (max-width: 600px) {
   .achievements__item {
     min-width: 100%;
+  }
+
+  div.wp-block-ross-accordion {
+    margin-top: 76px;
+  }
+
+  div.wp-block-ross-types {
+    margin: 60px auto;
+  }
+
+  div.wp-block-ross-about {
+    margin-bottom: 112px;
+  }
+
+  .wp-gr {
+    margin: 48px auto !important;
   }
 }
