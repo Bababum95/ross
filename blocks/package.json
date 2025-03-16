@@ -10,7 +10,7 @@
     "lint:js": "wp-scripts lint-js",
     "packages-update": "wp-scripts packages-update",
     "plugin-zip": "wp-scripts plugin-zip",
-    "unzip": "unzip -o ./ross.zip -d .",
+    "prepare-ross": "mkdir -p ross && cp -r build ross && cp -r assets ross && cp ross.php ross/",
     "start": "wp-scripts start --webpack-copy-php"
   },
   "devDependencies": {
