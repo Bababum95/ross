@@ -1,7 +1,7 @@
 import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, TextControl } from "@wordpress/components";
+import { PanelBody, Placeholder, TextControl } from "@wordpress/components";
+import type { IconType } from "@wordpress/components";
 
-import { ServerSideRenderComponent } from "@/components/ServerSideRenderComponent";
 import metadata from "./block.json";
 
 export const Edit = ({ attributes, setAttributes }) => {
@@ -9,13 +9,9 @@ export const Edit = ({ attributes, setAttributes }) => {
 
   return (
     <div {...blockProps}>
-      <ServerSideRenderComponent
-        attributes={attributes}
-        description={metadata.description}
-        name={metadata.name}
-        title={metadata.title}
-        icon={metadata.icon}
-      />
+      <Placeholder icon={metadata.icon as IconType} label={metadata.title}>
+        {metadata.description}
+      </Placeholder>
       <InspectorControls>
         <PanelBody title="Settings">
           <TextControl

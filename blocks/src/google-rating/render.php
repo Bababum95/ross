@@ -21,7 +21,7 @@ $review_count = (int) $place->review_count;
 $link         = isset($attributes['link']) ? $attributes['link'] : '#';
 ?>
 
-<a <?php echo wp_kses_data(get_block_wrapper_attributes()); ?> href="<?php echo $link; ?>">
+<a <?php echo wp_kses_data(get_block_wrapper_attributes()); ?> href="<?php echo esc_url($link); ?>">
     <img class="wp-block-ross-google-rating__google" src="<?php echo ROSS_BLOCKS_URL ?>assets/icons/google.png" alt="Google" width="24" height="24">
     <div class="wp-block-ross-google-rating__content">
         <div class="wp-block-ross-google-rating__rating">
