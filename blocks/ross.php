@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       Ross Blocks
- * Version:           1.0.6
+ * Version:           1.0.7
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            Bababum
