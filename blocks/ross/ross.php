@@ -12,6 +12,7 @@
  * Text Domain:       ross
  * 
  * GitHub Plugin URI: https://github.com/Bababum95/ross
+ * Primary Branch:     blocks
  * GitHub Branch:     blocks
  * 
  * @package RossBlocks

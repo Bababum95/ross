@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       Ross Blocks
- * Version:           1.0.3
+ * Version:           1.0.4
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            Bababum
@@ -12,6 +12,7 @@
  * Text Domain:       ross
  * 
  * GitHub Plugin URI: https://github.com/Bababum95/ross
+ * Primary Branch:     blocks
  * GitHub Branch:     blocks
  * 
  * @package RossBlocks
