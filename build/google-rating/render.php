@@ -2,6 +2,8 @@
 
 global $wpdb;
 
+$attributes = $attributes ?? [];
+
 $place_id  = $attributes['place_id'] ? $attributes['place_id'] : 0;
 $place_sql = "SELECT id, place_id, name, rating, review_count, updated" .
     " FROM " . $wpdb->prefix . "grp_google_place" .
@@ -19,7 +21,7 @@ if (!$place) return;
 $rating       = (float) $place->rating;
 $review_count = (int) $place->review_count;
 $link         = isset($attributes['link']) ? $attributes['link'] : '#';
-
+$link         = $attributes['link'] ?? '#';
 ?>
 
 <a <?php echo wp_kses_data(get_block_wrapper_attributes()); ?> href="<?php echo esc_url($link); ?>">
