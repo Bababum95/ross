@@ -23,6 +23,11 @@ export const Edit = ({ attributes, setAttributes }) => {
             value={attributes.place_id}
             onChange={(place_id) => setAttributes({ place_id })}
           />
+          <TextControl
+            label="Link"
+            value={attributes.link}
+            onChange={(link) => setAttributes({ link })}
+          />
         </PanelBody>
       </InspectorControls>
     </div>

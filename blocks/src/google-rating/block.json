@@ -12,6 +12,9 @@
     "place_id": {
       "type": "string",
       "default": "0"
+    },
+    "link": {
+      "type": "string"
     }
   },
   "supports": {

@@ -21,7 +21,7 @@ $review_count = (int) $place->review_count;
 
 ?>
 
-<div <?php echo wp_kses_data(get_block_wrapper_attributes()); ?>>
+<a <?php echo wp_kses_data(get_block_wrapper_attributes()); ?> href="<?php echo esc_url($attributes['link']); ?>">
     <img class="wp-block-ross-google-rating__google" src="<?php echo ROSS_BLOCKS_URL ?>assets/icons/google.png" alt="Google" width="24" height="24">
 
     <div class="wp-block-ross-google-rating__content">
@@ -49,4 +49,4 @@ $review_count = (int) $place->review_count;
             Based on <?php echo $review_count ?> reviews
         </p>
     </div>
-</div>
+</a>

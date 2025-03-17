@@ -15,8 +15,11 @@ main {
 .wp-block-post {
   position: relative;
   grid-column: span 2;
-  font-size: clamp(1.25rem, 1.275rem + -0.125vw, 1.125rem);
   width: 100%;
+}
+
+.wp-block-post .wp-block-post-title {
+  font-size: clamp(1.25rem, 1.4063rem + -0.5vw, 1.125rem);
 }
 
 .wp-block-post img,
@@ -28,11 +31,14 @@ main {
 
 .wp-block-post:first-child {
   grid-column: span 5;
-  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 }
 
 .wp-block-post:nth-child(2) {
   grid-column: span 3;
+}
+
+.wp-block-post:first-child .wp-block-post-title,
+.wp-block-post:nth-child(2) .wp-block-post-title {
   font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 }
 
