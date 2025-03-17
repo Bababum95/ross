@@ -18,12 +18,12 @@ if (!$place) return;
 
 $rating       = (float) $place->rating;
 $review_count = (int) $place->review_count;
+$link         = $attributes['link'];
 
 ?>
 
-<a <?php echo wp_kses_data(get_block_wrapper_attributes()); ?> href="<?php echo esc_url($attributes['link']); ?>">
+<a <?php echo wp_kses_data(get_block_wrapper_attributes()); ?> href="<?php echo esc_url($link); ?>">
     <img class="wp-block-ross-google-rating__google" src="<?php echo ROSS_BLOCKS_URL ?>assets/icons/google.png" alt="Google" width="24" height="24">
-
     <div class="wp-block-ross-google-rating__content">
         <div class="wp-block-ross-google-rating__rating">
             <span class="wp-block-ross-google-rating__score">

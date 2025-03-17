@@ -1,1 +1,0 @@
-(()=>{var e=document.querySelectorAll(".wp-block-ross-accordion-item");null==e||e.forEach((function(e){var t=e.querySelector(".wp-block-ross-accordion-item__content");e.style.setProperty("--max-height",t.scrollHeight+"px"),e.addEventListener("click",(function(){e.classList.toggle("active")}))}))})();
