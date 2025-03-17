@@ -18,7 +18,7 @@ if (!$place) return;
 
 $rating       = (float) $place->rating;
 $review_count = (int) $place->review_count;
-$link         = $attributes['link'];
+$link         = isset($attributes['link']) ? $attributes['link'] : '#';
 
 ?>
 
