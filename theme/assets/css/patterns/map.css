@@ -1,5 +1,5 @@
 .map {
-  margin: 20px 0 160px !important;
+  margin: 20px 0 0 !important;
 }
 
 .map__title {
@@ -10,6 +10,6 @@
 
 @media screen and (max-width: 600px) {
   .map {
-    margin: 24px 0 60px !important;
+    margin-top: 24px !important;
   }
 }

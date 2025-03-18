@@ -10,7 +10,10 @@ export const Save = ({ attributes }) => {
     <div {...blockProps}>
       {SOCIALS.map((item) => (
         <li key={item.name} className={`${baseClass}__item`}>
-          <a className={`${baseClass}__link`}>
+          <a
+            className={`${baseClass}__link`}
+            href={attributes[item.name] || "#"}
+          >
             <img
               className={`${baseClass}__icon`}
               src={item.src}
