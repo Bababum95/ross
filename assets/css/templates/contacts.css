@@ -2,6 +2,7 @@
   max-width: var(--wp--style--global--content-size, 1480px);
   margin: 70px auto;
   padding: 0 16px;
+  min-height: calc(100vh - 560px);
 }
 
 .subtitle {
